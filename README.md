@@ -1,6 +1,6 @@
 # Melp
 API provided by flask to retrieve, post and put data to a database.
-In this scenario the database is running at host and the requirements for being compatible are following the next structure:
+In this scenario the database is running at host and the requirements for being compatible are following the next structure:<br/>
 CREATE TABLE `Restaurants` (
   `id` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `rating` int(11) DEFAULT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE `Restaurants` (
   `lat` float DEFAULT NULL,
   `lng` float DEFAULT NULL
 ) 
-
-The table is based on the one specified in the mail. 
+<br/>
+The table is based on the one specified in the mail. <br/>
 But for lat and lng is recommended the use of decimal(15,13), because of the need of precision.
 And handle this in the application with a single conversion to float in order to be properly fitten within pyhton variables.
